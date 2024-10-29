@@ -11,5 +11,6 @@ CHIP Inc16 {
     OUT out[16];
 
     PARTS:
-    //// Replace this comment with your code.
+        // out[0](b[0]) is always 1(=true) because it is incremental.
+        Add16(a=in, b[0]=true, out=out);
 }
